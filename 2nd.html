@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my first website</title>
+    <style>
+        /* list tag r jnw  */
+        li:nth-child(2n+1){
+            background-color: blue;
+        }
+        /* input tag jnw */
+        input:focus{
+            font-size: 20px;
+
+        }
+        /* list/paragraph tag r jnw */ 
+        /* paragraph r age counter add korar jnw */
+        /* css pseudo elements counters */
+         body {
+            counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+             }
+
+        p::before 
+        {
+            counter-increment: section;                   /* Increment the value of section counter by 1 */
+             content: " " counter(section) ": ";    /* Display the word 'Section ', the value of  */
+                                                   /* section counter, and a colon before the content
+                                                   of each h3 */ */
+        }
+        /* emoji add korar jnw */
+        .me::before{
+             content: "❤️";            /* https://emojipedia.org/red-heart/ */
+        }
+    </style>
 </head>
 <body>
     <h1>i am so happy</h1>
+    <ul>
+        <li>Mother</li>
+        <li>Father</li>
+        <li>sister</li>
+        <li>brother</li>
+        <li>uncle</li>
+        <li>unty</li>
+        <li>grandfather</li>
+    </ul>
+    
+        <p>alia</p>
+        <p>manjela</p>
+        <p>dilkhus</p>
+        <p>sadia</p>
+        <p>achol</p>
+        <p>sonia</p>
+        <p>ayshi</p>
+    <div class="me">my love</div>
+    <input name="email" type="text">
+    <input type="text">
 </body>
 </html>
